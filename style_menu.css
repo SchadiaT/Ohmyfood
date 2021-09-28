@@ -36,10 +36,11 @@
         font-size: x-large;
     }
     main {
-        background-color: lightgray;
+        position: relative;
+        background-color: #f9f5f5;
         border-radius: 3rem 3rem 0 0;
         padding-bottom: 5%;
-        margin-top: -10%;
+        margin-top: -13%;
         animation: apparition .5s ease-in;
     }
     @keyframes apparition {
@@ -55,13 +56,14 @@
     .menu_title {
         border-bottom: #99E2D0 3px solid;
         font-weight: 100;
+        width: 13%;
     }
     .food_box {
         display: flex;
         margin: 3%;
         background-color: white;
         border-radius: 1rem;
-        box-shadow: 0 0 1rem gray;
+        box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.280);
         cursor: pointer;
         animation: apparition 1s ease-in .25s;
         overflow: hidden;
@@ -92,20 +94,20 @@
         text-overflow: ellipsis;
     }
     .food_price {
-        padding-left: 4%;
-        padding-top: 10%;
+        padding: 10% 2% 0;
     }
     .check_icon {
         display: inline-block;
         width: 95px;
+        margin-left: 21px;
         margin-right: -95px;
         background-color: #99E2D0;
         border-radius: 0 1rem 1rem 0;
         color: white;
         font-size: x-large;
     }
-    .fa-check-circle {
-        animation: ro 2s linear;
+    .food_box:hover .fa-check-circle {
+        animation: ro 0.4s linear;
     }
     @keyframes ro {
         from {
