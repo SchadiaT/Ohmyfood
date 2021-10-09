@@ -41,6 +41,161 @@
         border-radius: 3rem 3rem 0 0;
         padding-bottom: 5%;
         margin-top: -13%;
+    }
+    .menu_title {
+        border-bottom: #99E2D0 3px solid;
+        font-weight: 100;
+        width: 13%;
+    }
+    .food_box {
+        display: flex;
+        margin: 3%;
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.280);
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .food_box:nth-child(2) {
+        animation: apparition linear 300ms;
+    }
+    .food_box:nth-child(3) {
+        animation: apparition linear 600ms;
+    }
+    .food_box:nth-child(4) {
+        animation: apparition linear 900ms;
+    }
+    @keyframes apparition {
+        0% {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    .food_box:hover .check_icon {
+        margin-right: 0;
+        transition: 1s;
+    }
+    .food_element {
+        width: 80%;
+        padding-left: 2%;
+    }
+    .food_name, .food_addition {
+        margin: 5px;
+        padding: 3px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .food_price {
+        padding: 10% 2% 0;
+    }
+    .check_icon {
+        display: inline-block;
+        width: 95px;
+        margin-left: 21px;
+        margin-right: -95px;
+        background-color: #99E2D0;
+        border-radius: 0 1rem 1rem 0;
+        color: white;
+        font-size: x-large;
+    }
+    .fa-check-circle {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .food_box:hover .fa-check-circle {
+        animation: ro 1s linear;
+    }
+    @keyframes ro {
+        from {
+            transform: rotate(0);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .order_button {
+        display: flex;
+        justify-content: center;
+        color: white;
+        margin: 13%;
+        padding: 1%;
+        border-radius: 2rem;
+        background: linear-gradient(#FF79DA, #9356DC );
+        box-shadow: 0 0 1rem gray;
+        cursor: pointer;
+    }
+    footer {
+        background: #000000de;
+        color: white;
+        padding: 2% 0 2% 6%;
+    }
+    .footer_title {
+        color: white;
+        width: 30%;
+    }
+    .footer_option {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer_icon {
+        padding: 5% 4% 0 0;
+    }
+}
+
+@media all and (min-width: 501px) and (max-width: 2300px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo_backtraker {
+        display: flex;
+    }
+    .fa-arrow-left {
+        font-size: xx-large;
+        padding: 25px;
+    }
+    .menu_logo {
+        width: 50%;
+        padding-left: 50px;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    .menu_image {
+        width: 100%;
+    }
+    .menu {
+        display: flex;
+        width: 100%;
+    }
+    .menu_name {
+        font-family: Shrikhand;
+        padding-left: 5%;
+    }
+    .menu_icon {
+        padding: 20px;
+        font-size: x-large;
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        background-color: #f9f5f5;
+        border-radius: 3rem 3rem 0 0;
+        padding-bottom: 5%;
+        margin-top: -13%;
         animation: apparition .5s ease-in;
     }
     @keyframes apparition {
@@ -57,6 +212,11 @@
         border-bottom: #99E2D0 3px solid;
         font-weight: 100;
         width: 13%;
+    }
+    .menu_card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
     .food_box {
         display: flex;
@@ -121,7 +281,8 @@
         display: flex;
         justify-content: center;
         color: white;
-        margin: 13%;
+        width: 100%;
+        margin: 6% 20% 6% 20%;
         padding: 1%;
         border-radius: 2rem;
         background: linear-gradient(#FF79DA, #9356DC );
@@ -129,6 +290,8 @@
         cursor: pointer;
     }
     footer {
+        display: flex;
+        flex-direction: column;
         background: #000000de;
         color: white;
         padding: 2% 0 2% 6%;
@@ -137,14 +300,17 @@
         color: white;
         width: 30%;
     }
+    .footer_element {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 2%;
+    }
     .footer_option {
         display: flex;
         flex-direction: row;
     }
     .footer_icon {
-        padding: 5% 4% 0 0;
+        margin: 17px 10px 0 0;
     }
-
-
-
-
+}
