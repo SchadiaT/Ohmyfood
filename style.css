@@ -2,30 +2,51 @@
     font-family: 'Roboto', sans-serif;
 }
 @media all and (max-width: 500px) {
-    .spin {
-        animation: 1.5s linear 3s spinner;
-        border: solid 5px #cfd0d1;
-        border-bottom-color: #1c87c9;
+    .loading_page {
+        width: 100vw;
+        height: 100vh;
+        background-color: blue;
+        animation: transform 3s linear;
+        animation-fill-mode: forwards;
+        position: fixed;
+        z-index: 10;
+    }
+    @keyframes transform {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+    .loading_page::after {
+        display: none;
+    }
+    .loader {
+        border-top: 10px solid #9356DC;
+        border-bottom: 10px solid #FF79DA;
+        border-left: 10px solid #99E2D0;
+        border-right: 10px solid #99E2D0;
         border-radius: 50%;
-        width: 30%;
-        height: 19%;
-        top: 20%;
-        left: 30%;
+        width: 100px;
+        height: 100px;
+        animation: spin 3s linear;
+        margin: auto;
         position: absolute;
-        transform: translate3d(-50%, -50%, 0);
-        will-change: transform;
+        top: 0; bottom: 0; right: 0; left: 0;
         animation-fill-mode: both;
-      }
-      @keyframes spinner {
-        from {
-          transform: translate3d(-50%, -50%, 0) rotate(0deg);
-          opacity: 1;
+    }
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+            opacity: 1;
         }
-        to {
-          transform: translate3d(-50%, -50%, 0) rotate(360deg);
-          opacity: 0;
+        100% {
+            transform: rotate(360deg);
+            opacity: 0;
         }
-      }
+    }
     header {
         display: flex;
         justify-content: center;
@@ -82,7 +103,7 @@
         color: white;
         background-color: #9356DC;
         padding: 5px;
-        margin-left: -5rem;
+        margin-left: -40%;
     }
     .choice_button {
         display: flex;
@@ -122,6 +143,7 @@
         display: flex;
         flex-direction: column;
         background-color: white;
+        position: relative;
         border-radius: 20px;
         width: 90%;
         justify-content: center;
@@ -134,8 +156,8 @@
         padding: 2px;
         width: max-content;
         position: absolute;
-        margin-left: 65%;
-        margin-bottom: 55%;
+        top: 5%;
+        right: 7%;
     }
     .restaurant_image {
         width: 100%;
@@ -388,22 +410,3 @@
     }
     
 }
-.loading_background {
-        position: fixed;
-        z-index: 100;
-        width: 100vw;
-        height: 100vh;
-        background-color: aqua;
-        top: 0;
-        animation: transition 3s linear ;
-        animation-fill-mode: both;
-        display: none;
-     }
-     @keyframes transition {
-        from {
-            opacity: 1;
-        }
-        to {
-            opacity: 0;   
-        }
-    }

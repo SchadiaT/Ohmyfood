@@ -26,6 +26,7 @@
     }
     .menu {
         display: flex;
+        justify-content: space-between;
     }
     .menu_name {
         font-family: Shrikhand;
@@ -85,6 +86,7 @@
     .food_element {
         width: 80%;
         padding-left: 2%;
+        overflow: hidden;
     }
     .food_name, .food_addition {
         margin: 5px;
