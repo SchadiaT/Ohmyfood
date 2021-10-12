@@ -1,3 +1,29 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+@media all and (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo_backtraker {
+        display: flex;
+    }
+    footer {
+        background: #000000de;
+        color: white;
+        padding: 2% 0 2% 6%;
+    }
+    .footer_title {
+        color: white;
+        width: 30%;
+    }
+    .footer_option {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer_icon {
+        padding: 5% 4% 0 0;
+    }
+}
