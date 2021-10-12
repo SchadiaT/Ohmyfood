@@ -10,6 +10,21 @@
     .logo_backtraker {
         display: flex;
     }
+    .fa-arrow-left {
+        padding: 4%; 
+        color: black;
+    }
+    main {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact {
+        margin: 5%;
+    }
+    a {
+        text-decoration: none;
+    }
     footer {
         background: #000000de;
         color: white;
@@ -25,5 +40,10 @@
     }
     .footer_icon {
         padding: 5% 4% 0 0;
+    }
+    .contact_link {
+        color: white;
+        display: flex;
+        justify-content: left;
     }
 }

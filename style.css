@@ -135,17 +135,15 @@
     .restaurant_title {
         margin: 2% 0 0 6%;
     }
-    a {
+    a {  
         text-decoration: none;
-        color: black;
-        display: flex;
-        justify-content: center;
     }
     .restaurant {
         display: flex;
         flex-direction: column;
         background-color: white;
         position: relative;
+        color: black;
         border-radius: 20px;
         width: 90%;
         justify-content: center;
@@ -226,6 +224,11 @@
     }
     .footer_icon {
         padding: 4% 4% 0 0;
+    }
+    .contact_link {
+        color: white;
+        display: flex;
+        justify-content: left;
     }
 }
 @media all and (min-width: 501px) and (max-width: 2300px) {

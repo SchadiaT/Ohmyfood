@@ -11,7 +11,8 @@
         display: flex;
     }
     .fa-arrow-left {
-        padding: 4%;
+        padding: 4%; 
+        color: black;
     }
     .menu_logo {
         width: 50%;
@@ -19,7 +20,6 @@
     }
     a {
         text-decoration: none;
-        color: black;
     }
     .menu_image {
         width: 100%;
@@ -150,6 +150,11 @@
     }
     .footer_icon {
         padding: 5% 4% 0 0;
+    }
+    .contact_link {
+        color: white;
+        display: flex;
+        justify-content: left;
     }
 }
 
