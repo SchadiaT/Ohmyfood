@@ -5,13 +5,13 @@
     header {
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
     .logo_backtraker {
         display: flex;
+        justify-content: space-between;
     }
     .fa-arrow-left {
-        padding: 4%; 
+        margin: 4%; 
         color: black;
     }
     main {
