@@ -277,6 +277,12 @@
             opacity: 0;
         }
     }
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        justify-self: center;
+    }
     header {
         display: flex;
         justify-content: center;
@@ -296,7 +302,7 @@
         justify-content: center;
     }
     .localisation_button {
-        padding: 4%;
+        padding: 14px;
     }
     .catch_line {
         font-size: 26px;
@@ -411,7 +417,7 @@
         flex-direction: column;
         justify-content: space-between;
         width: 75%;
-        padding: 3%;
+        padding: 10px;
     }
     .restaurant_name {
         margin: 0;
@@ -422,7 +428,7 @@
     .restaurant_icon {
         display: flex;
         justify-content: end;
-        padding-top: 5%;
+        padding-top: 20px;
     }
     .fa-heart {
         font-size: x-large;
@@ -458,7 +464,7 @@
         flex-direction: row;
     }
     .footer_icon {
-        padding: 4% 4% 0 0;
+        padding: 16px 11px 0 0;
     }
     .contact_link {
         color: white;

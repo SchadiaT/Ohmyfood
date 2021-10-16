@@ -201,6 +201,9 @@
         padding-bottom: 5%;
         margin-top: -13%;
     }
+    .menu_card {
+        display: flex;
+        flex-direction: row;
     }
     .menu_title {
         border-bottom: #99E2D0 3px solid;

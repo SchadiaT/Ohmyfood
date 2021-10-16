@@ -47,3 +47,49 @@
         justify-content: left;
     }
 }
+@media all and (min-width: 501px) and (max-width: 2300px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo_backtraker {
+        display: flex;
+        justify-content: space-between;
+    }
+    .fa-arrow-left {
+        margin: 4%; 
+        color: black;
+    }
+    main {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact {
+        margin: 5%;
+    }
+    a {
+        text-decoration: none;
+    }
+    footer {
+        background: #000000de;
+        color: white;
+        padding: 2% 0 2% 6%;
+    }
+    .footer_title {
+        color: white;
+        width: 30%;
+    }
+    .footer_option {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer_icon {
+        padding: 5% 4% 0 0;
+    }
+    .contact_link {
+        color: white;
+        display: flex;
+        justify-content: left;
+    }
+}
