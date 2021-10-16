@@ -201,6 +201,7 @@
         padding-bottom: 5%;
         margin-top: -13%;
     }
+    }
     .menu_title {
         border-bottom: #99E2D0 3px solid;
         font-weight: 100;
@@ -260,7 +261,7 @@
     .check_icon {
         display: inline-block;
         width: 95px;
-        margin-left: 10%;
+        margin-left: 12%;
         margin-right: -95px;
         background-color: #99E2D0;
         border-radius: 0 1rem 1rem 0;
@@ -270,7 +271,7 @@
     .fa-check-circle {
         display: flex;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: 30px;
     }
     .food_box:hover .fa-check-circle {
         animation: ro 1s linear;

@@ -384,7 +384,7 @@
     }
     .restaurant_card {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     .new_alert {
         background-color: #99E2D0;
@@ -422,7 +422,6 @@
     .restaurant_icon {
         display: flex;
         justify-content: end;
-        width: 13%;
         padding-top: 5%;
     }
     .fa-heart {
