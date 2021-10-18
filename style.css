@@ -215,8 +215,9 @@
         padding: 2% 0 2% 6%;
     }
     .footer_title {
+        font-family: Shrikhand;
+        font-size: x-large;
         color: white;
-        width: 30%;
     }
     .footer_option {
         display: flex;
@@ -456,9 +457,10 @@
         padding: 2% 0 2% 6%;
     }
     .footer_title {
+        font-family: Shrikhand;
+        font-size: x-large;
         color: white;
-        width: 30%;
-    }
+    } 
     .footer_option {
         display: flex;
         flex-direction: row;
