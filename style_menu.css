@@ -314,7 +314,7 @@
         text-overflow: ellipsis;
     }
     .food_price {
-        padding: 10% 1% 0;
+        padding: 40px 1% 0;
     }
     .check_icon {
         display: inline-flex;

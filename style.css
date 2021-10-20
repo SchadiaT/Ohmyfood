@@ -295,6 +295,9 @@
         padding: 2%;
     }
     .overview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         background-color: #f9f5f5;
         padding-bottom: 3%;
     }
@@ -303,6 +306,7 @@
         background-color: #f1ecec;
         border-top: 5px solid #d9d8d8;
         justify-content: center;
+        width: 100%;
     }
     .localisation_button {
         padding: 14px;
