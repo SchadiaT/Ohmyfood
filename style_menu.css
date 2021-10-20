@@ -36,6 +36,30 @@
         padding: 24px;
         font-size: x-large;
     }
+    .clicked {
+        opacity: 0;
+        position: absolute;
+    }
+    .clicked:hover {
+        background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+        transition: 1s ease-in;
+        opacity: 1;
+    }
+    @keyframes transition {
+        from {
+            opacity: 0;
+            transform: translateX(0px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(100px);
+        }
+    }
+    .no_clicked:hover {
+        opacity: 0;
+    }
     main {
         position: relative;
         background-color: #f9f5f5;
@@ -164,24 +188,29 @@
     header {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
     .logo_backtraker {
         display: flex;
+        justify-content: center;
     }
     .fa-arrow-left {
-        padding: 4%; 
+        margin-top: 10px;
         color: black;
+        font-size: x-large;
     }
     .menu_logo {
-        width: 50%;
-        padding-left: 20%;
+        width: 100%;
+        padding: 2%;
     }
     a {
         text-decoration: none;
     }
     .menu_image {
-        width: 100%;
+        width: 70%;
+        height: 85rem;
+        border-radius: 3rem;
+        object-fit: cover;
     }
     .menu {
         display: flex;
@@ -195,16 +224,41 @@
         padding: 24px;
         font-size: x-large;
     }
+    .clicked {
+        opacity: 0;
+        position: absolute;
+    }
+    .clicked:hover {
+        background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent;
+        transition: 1s ease-in;
+        opacity: 1;
+    }
+    @keyframes transition {
+        from {
+            opacity: 0;
+            transform: translateX(0px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(100px);
+        }
+    }
+    .no_clicked:hover {
+        opacity: 0;
+    }
     main {
         position: relative;
         background-color: #f9f5f5;
-        border-radius: 3rem 3rem 0 0;
+        border-radius: 3rem;
         padding-bottom: 5%;
-        margin-top: -13%;
+        margin: -174vh auto 8vw auto;
+        width: 50%;
     }
     .menu_card {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     .menu_title {
         border-bottom: #99E2D0 3px solid;
@@ -263,7 +317,7 @@
         padding: 10% 1% 0;
     }
     .check_icon {
-        display: inline-block;
+        display: inline-flex;
         width: 95px;
         margin-left: 12%;
         margin-right: -95px;
@@ -271,11 +325,12 @@
         border-radius: 0 1rem 1rem 0;
         color: white;
         font-size: x-large;
+        justify-content: center;
+        align-items: center;
     }
     .fa-check-circle {
         display: flex;
         justify-content: center;
-        margin-top: 30px;
     }
     .food_box:hover .fa-check-circle {
         animation: ro 1s linear;

@@ -192,11 +192,16 @@
     .fa-heart {
         font-size: x-large;
     }
-    .fa-heart:hover {
+    .clicked {
+        opacity: 0;
+        position: absolute;
+    }
+    .clicked:hover {
         background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
         transition: 1s ease-in;
+        opacity: 1;
     }
     @keyframes transition {
         from {
@@ -207,6 +212,9 @@
             opacity: 1;
             transform: translateX(100px);
         }
+    }
+    .no_clicked:hover {
+        opacity: 0;
     }
 
     footer {
@@ -278,18 +286,12 @@
             opacity: 0;
         }
     }
-    body {
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        justify-self: center;
-    }
     header {
         display: flex;
         justify-content: center;
     }
     .logo {
-        width: 60%;
+        width: 35%;
         padding: 2%;
     }
     .overview {
@@ -308,20 +310,17 @@
     .catch_line {
         font-size: 26px;
         text-align: center;
-        padding: 4%;
         margin: 4%;
     }
     .catch_phrase {
         font-size: large;
         text-align: center;
-        padding: 3%;
-        margin: 3%;
     }
     .exploration_button{
         display: flex;
         justify-content: center;
         color: white;
-        margin: 10%;
+        width: max-content;
         padding: 1%;
         border-radius: 2rem;
         background: linear-gradient(#FF79DA, #9356DC );
@@ -384,14 +383,15 @@
         position: relative;
         color: black;
         border-radius: 20px;
-        width: 90%;
         justify-content: center;
         margin: 3%;
         box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.280);
+        width: 22vw;
     }
     .restaurant_card {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        gap: 15px;
     }
     .new_alert {
         background-color: #99E2D0;
@@ -434,11 +434,16 @@
     .fa-heart {
         font-size: x-large;
     }
-    .fa-heart:hover {
+    .clicked {
+        opacity: 0;
+        position: absolute;
+    }
+    .clicked:hover {
         background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
 	    -webkit-background-clip: text;
 	    -webkit-text-fill-color: transparent;
         transition: 1s ease-in;
+        opacity: 1;
     }
     @keyframes transition {
         from {
@@ -449,6 +454,9 @@
             opacity: 1;
             transform: translateX(100px);
         }
+    }
+    .no_clicked:hover {
+        opacity: 0;
     }
 
     footer {
