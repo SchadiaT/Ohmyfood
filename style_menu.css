@@ -255,6 +255,7 @@
         padding-bottom: 5%;
         margin: -174vh auto 8vw auto;
         width: 50%;
+        max-width: 582px;
     }
     .menu_card {
         display: flex;
