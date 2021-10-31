@@ -91,6 +91,9 @@
     .food_box:nth-child(4) {
         animation: apparition linear 900ms;
     }
+    .food_box:nth-child(5) {
+        animation: apparition linear 1200ms;
+    }
     @keyframes apparition {
         0% {
             opacity: 0;
@@ -294,6 +297,9 @@
     }
     .food_box:nth-child(4) {
         animation: apparition linear 900ms;
+    }
+    .food_box:nth-child(5) {
+        animation: apparition linear 1200ms;
     }
     @keyframes apparition {
         0% {
