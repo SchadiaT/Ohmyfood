@@ -91,6 +91,9 @@
         box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.280);
         cursor: pointer;
     }
+    .exploration_button:hover {
+        background: linear-gradient(#9356DC, #FF79DA);
+    }
     .management_title {
         margin-left: 12px;
     }
@@ -331,6 +334,9 @@
         box-shadow: 0px 5px 5px rgba(12, 12, 12, 0.280);
         cursor: pointer;
     }
+    .exploration_button:hover {
+        background: linear-gradient(#9356DC, #FF79DA);
+    }
     .management_title {
         margin-left: 12px;
     }
@@ -345,7 +351,7 @@
         color: white;
         background-color: #9356DC;
         padding: 5px;
-        margin-left: -99%;
+        left: -10px;
         position: absolute;
     }
     .choice_button {

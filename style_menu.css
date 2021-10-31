@@ -120,6 +120,9 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    .food_addition {
+        font-weight: 300;
+    }
     .food_price {
         padding: 10% 1% 0;
     }
@@ -159,6 +162,9 @@
         background: linear-gradient(#FF79DA, #9356DC );
         box-shadow: 0 0 1rem gray;
         cursor: pointer;
+    }
+    .order_button:hover {
+        background: linear-gradient(#9356DC, #FF79DA);
     }
     footer {
         background: #000000de;
@@ -207,6 +213,7 @@
         text-decoration: none;
     }
     .menu_image {
+        position: relative;
         width: 70%;
         height: 85rem;
         border-radius: 3rem;
@@ -249,13 +256,16 @@
         opacity: 0;
     }
     main {
-        position: relative;
+        position: absolute;
         background-color: #f9f5f5;
         border-radius: 3rem;
         padding-bottom: 5%;
-        margin: -174vh auto 8vw auto;
+        left: 50%;
+        top: 83%;
+        transform: translate(-50%, -50%);
         width: 50%;
         max-width: 582px;
+        max-height: 945px;
     }
     .menu_card {
         display: flex;
@@ -314,6 +324,9 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    .food_addition {
+        font-weight: 300;
+    }
     .food_price {
         padding: 40px 1% 0;
     }
@@ -354,6 +367,9 @@
         background: linear-gradient(#FF79DA, #9356DC );
         box-shadow: 0 0 1rem gray;
         cursor: pointer;
+    }
+    .order_button:hover {
+        background: linear-gradient(#9356DC, #FF79DA);
     }
     footer {
         background: #000000de;
